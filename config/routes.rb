@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
   
   resources :black_lists
-
-  get 'search_black_list' => 'black_lists#search'
-  get 'location_black_list' => 'black_lists#location'
-
   resources :table_prices do
     member do 
       get :confirm

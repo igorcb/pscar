@@ -3,16 +3,6 @@ class BlackListsController < ApplicationController
 
   before_action :set_black_list, only: [:show, :edit, :update, :destroy]
 
-  def search
-    #if params[:black_list][:cpf].nil? 
-      #@black_list = BlackList.find_by_cpf(params[:black_list][:cpf].upcase) 
-    #end
-  end
-
-  def location
-    @black_list = BlackList.find_by_cpf(params[:black_list][:cpf].upcase) 
-  end
-
   # GET /black_lists
   # GET /black_lists.json
   def index

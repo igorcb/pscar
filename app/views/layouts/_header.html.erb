@@ -2,7 +2,7 @@
          
          <div class="jumbotron main-banner center" id="internal-banner">
           <div class="container" style="width: 700px">
-            <%= image_tag("logo_grupo_sucesso.png", width: 300, :alt => "Grupo Sucesso Car", class: "img-responsive") %>
+            <%= image_tag("logo_grupo_sucesso.png", width: 300, :alt => "PsCar", class: "img-responsive") %>
           </div>
         </div>
         <hr>
@@ -20,14 +20,14 @@
                     </button>
                     <!-- script to remove internal banner when user is logged in and in the root_path -->
                     <% if user_signed_in? and current_page?('/') %>
-                        <%= link_to "Grupo Sucesso Car", root_path, class: "navbar-brand" %>
+                        <%= link_to "PsCar", root_path, class: "navbar-brand" %>
                         <script type="text/javascript">
                           $(document).ready(function () { 
                             $('#internal-banner').remove()
                           });
                         </script>
                     <% else %>
-                        <%= link_to "Grupo Sucesso Car", root_path, class: "navbar-brand" %>
+                        <%= link_to "PsCar", root_path, class: "navbar-brand" %>
                     <% end %>  
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
